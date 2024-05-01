@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulir</title>
+<style>
+    table {
+        border-collapse: collapse;
+        margin: 10px auto;
+    }
+    th, td {
+        border: 1px solid rgb(9, 7, 7);
+        padding: 8px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td colspan="2"><h2>Flomulir Pesanan</h2></td>
+    </tr>
+    <tr>
+        <td>Keterangan:</td>
+        <td><input type="text" name="keterangan"></td>
+    </tr>
+    <tr>
+        <td>Nama lengkap:</td>
+        <td><input type="text" name="username"></td>
+    </tr>
+    <tr>
+        <td>Alamat Rumah:</td>
+        <td><input type="password" name="password"></td>
+    </tr>
+    <tr>
+        <td rowspan="1">jenis barang:</td>
+        <td>
+            <table>
+                <tr>
+                    <td><input type="radio" id="Es Mambo" name="barang" value="Produk"></td>
+                    <td><label for="Produk">Es Mambo</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="Milu Siram" name="Food" value="Produk"></td>
+                    <td><label for="Produk">Milu Siram</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="Milu Batang" name="Food" value="Produk"></td>
+                    <td><label for="Produk">Milu Batang</label></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="1">Jenis Es Mambo:</td>
+        <td>
+            <table>
+                <tr>
+                    <td><input type="checkbox" id="Durian" name="Jenis" value="Durian"></td>
+                    <td><label for="Durian">Durian</label></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="Coklat" name="Jenis" value="Coklat"></td>
+                    <td><label for="Coklat">Coklat</label></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="Kacang_Hijau" name="Jenis" value="Kacang_Hijau"></td>
+                    <td><label for="Kacang_Hijau">Kacang Hijau</label></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="Alvocad" name="Jenis" value="Alvocado"></td>
+                    <td><label for="Alvocado">Alvocado</label></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="Mangga" name="Jenis" value="Mangga"></td>
+                    <td><label for="Mangga">Mangga</label></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Jumlah Pesanan:</td>
+        <td><textarea name="textarea" rows="5" cols="45"></textarea></td>
+    </tr>
+    <tr>
+        <td rowspan="1">Lokasi:</td>
+        <td>
+            <select name="lokasi">
+                <option value="GPI">GPI</option>
+                <option value="Mapanget">Mapanget</option>
+                <option value="BTM">BTM</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Alamat Spesifik:</td>
+        <td><textarea name="textarea" rows="5" cols="25"></textarea></td>
+    </tr>
+    <tr>
+        <td rowspan="1"></td>
+        <td><button type="submit">Kirim</button></td>
+    </tr>
+</table>
+</body>
+</html>
